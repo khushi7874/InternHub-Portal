@@ -1,0 +1,225 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #eef2f7 0%, #f8fbff 100%);
+  color: #2b2b2b;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand span {
+  letter-spacing: 0.06em;
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+  color: #ffce00 !important;
+}
+
+.home-banner {
+  padding: 5rem 1.25rem;
+  text-align: center;
+  background: rgba(14, 30, 60, 0.76);
+  color: #fff;
+  margin-top: -5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.home-banner h1 {
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  margin-bottom: 1rem;
+  line-height: 1.05;
+}
+
+.home-banner p {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  max-height: 520px;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 520px;
+}
+
+.carousel-caption {
+  bottom: 2.5rem;
+  background: rgba(0, 0, 0, 0.22);
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+}
+
+.form-card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(50, 64, 102, 0.12);
+  border: 1px solid rgba(125, 148, 183, 0.12);
+  padding: 2rem;
+}
+
+.form-card h2 {
+  font-weight: 700;
+}
+
+.form-control,
+.form-control-file,
+.custom-select {
+  border-radius: 12px;
+  border: 1px solid #dce3ed;
+  background: #fdfdff;
+}
+
+.form-control:focus,
+.custom-select:focus {
+  border-color: #2f80ed;
+  box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.18);
+}
+
+.btn-primary,
+.btn-success {
+  border-radius: 50px;
+  padding: 0.85rem 1.8rem;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #2f80ed;
+  border-color: #2f80ed;
+}
+
+.btn-success {
+  background: #27ae60;
+  border-color: #27ae60;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+  transform: translateY(-1px);
+}
+
+.contact-page .contact-hero {
+  background: linear-gradient(135deg, #1f3b70 0%, #244974 40%, #25587e 100%);
+}
+
+.contact-hero h1,
+.contact-hero p {
+  color: #f9fbff;
+}
+
+.contact-detail-card {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.register-page {
+  background: linear-gradient(180deg, #f4f8ff 0%, #e0e9ff 100%);
+}
+
+.register-page .form-card {
+  padding: 2.5rem;
+}
+
+.register-page h2 {
+  color: #173f7d;
+}
+
+.register-page .form-group label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.register-page .form-control {
+  background: #f8fbff;
+}
+
+.register-page .btn-success {
+  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+  box-shadow: 0 10px 20px rgba(39, 174, 96, 0.18);
+}
+
+.register-page .form-card::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 120px;
+  height: 120px;
+  background: rgba(47, 128, 237, 0.12);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.register-page .form-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-detail-card h5 {
+  color: #222;
+}
+
+.contact-detail-card p,
+.contact-detail-card a {
+  color: #4a5568;
+}
+
+.social-links a {
+  color: #2f80ed;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #1b5bbf;
+  text-decoration: none;
+}
+
+footer {
+  font-size: 0.95rem;
+  background: #1c2534;
+  color: #c8d0e3;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .carousel-inner img {
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-banner {
+    padding: 3rem 1rem;
+  }
+
+  .home-banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-banner p {
+    font-size: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .form-card {
+    padding: 1.75rem;
